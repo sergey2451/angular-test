@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+
+<ng-container [ngSwitch]="activeTabId">
+  <app-income *ngSwitchCase="0"></app-income>
+    <app-outcome *ngSwitchCase="1"></app-outcome>
+      <app-loans *ngSwitchCase="2"></app-loans>
+      <app-investments *ngSwitchCase="3"></app-investments>
+</ng-container>

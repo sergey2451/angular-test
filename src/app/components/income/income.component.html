@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <table class="table table-sm">
+    <thead>
+      <tr class="text-center">
+        <th class="w-50">Name</th>
+        <th class="w-50">Acount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center" *ngFor="let user of users">
+        <td>{{ user.name.first }} {{ user.name.last }}</td>
+        <td>{{ user.amount }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
